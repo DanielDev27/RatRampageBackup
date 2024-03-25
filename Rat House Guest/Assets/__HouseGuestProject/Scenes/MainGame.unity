@@ -5116,42 +5116,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1531295559521775164, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1531295559521775164, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1531295559521775164, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2660216291401499912, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2660216291401499912, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2660216291401499912, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122215894812806153, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122215894812806153, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122215894812806153, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8318367208210688802, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5192,25 +5156,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8478263799624972408, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8478263799624972408, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8478263799624972408, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8663542822342209944, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
       propertyPath: m_Name
       value: Books
-      objectReference: {fileID: 0}
-    - target: {fileID: 8663542822342209944, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

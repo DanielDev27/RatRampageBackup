@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    [SerializeField] float bookDamage;
     private void Start()
     {
         StartCoroutine(ProjectileDespawn());
@@ -16,7 +17,7 @@ public class Projectile : MonoBehaviour
         if (other.gameObject.TryGetComponent<CharacterController>(out CharacterController _characterController))
         {
             this.gameObject.SetActive(false);
-            RatHealthSystem.Instance.TakeDamage(5);
+            RatHealthSystem.Instance.TakeDamage(bookDamage);
         }
     }
     private IEnumerator ProjectileDespawn()
