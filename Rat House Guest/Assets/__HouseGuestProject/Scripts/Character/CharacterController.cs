@@ -29,6 +29,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private float fallMultiplier;
     [SerializeField] float jumpTimeout = 0.5f;
+    [SerializeField] float groundCheckRadius;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask floorLayer;
     [SerializeField] private LayerMask jumpingLayer;
@@ -169,8 +170,7 @@ public class CharacterController : MonoBehaviour
     public void GroundCheck()
     {
         Color rayColor;
-        RaycastHit raycastHit;
-        if (Physics.SphereCast(transform.position, 0f, -transform.up, out raycastHit, 1.1f, groundLayer))
+        if (Physics.OverlapSphere(transform.position, groundCheckRadius, groundLayer, QueryTriggerInteraction.Collide).Length > 0)
         {
             rayColor = Color.green;
             isGrounded = true;
@@ -241,7 +241,6 @@ public class CharacterController : MonoBehaviour
             kitchen = false;
             livingRoom = true;*/
             TaskManager.Instance.SetLivingRoom();
-
         }
 
     }
