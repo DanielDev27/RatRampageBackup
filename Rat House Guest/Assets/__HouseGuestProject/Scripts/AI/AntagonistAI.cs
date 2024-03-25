@@ -8,6 +8,7 @@ using Action = AI.UtilitySystem.Action;
 [CreateAssetMenu(fileName = "AIUtilityActionObject", menuName = "AI/Utility/ActionObject", order = 0)]
 public class AntagonistAI : ActionObject
 {
+    public static AntagonistAI Instance;
     [Header("Settings")]
     [SerializeField] private float updateFrequency;
     [SerializeField] private AIActions aIActionsRef;
@@ -16,7 +17,10 @@ public class AntagonistAI : ActionObject
     [SerializeField] private List<Action> actions = new List<Action>();
     [SerializeField] private Action bestAction;
     [SerializeField] private CharacterController characterController;
-    public override void Awake() { }
+    public override void Awake()
+    {
+        Instance = this;
+    }
     public override void OnEnable() { }
     public override void OnDisable() { }
     public override void Start()
@@ -44,11 +48,11 @@ public class AntagonistAI : ActionObject
         {
             if (antagonistActions.target == null || !antagonistActions.canSeeTarget)
             {
-                antagonistActions.transform.LookAt(agent.nextPosition);
+                antagonistActions.aiTransform.LookAt(agent.nextPosition);
             }
             if (antagonistActions.target != null && antagonistActions.canSeeTarget)
             {
-                antagonistActions.transform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.transform.position.y, antagonistActions.target.position.z));
+                antagonistActions.aiTransform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.transform.position.y, antagonistActions.target.position.z));
             }
         }
         antagonistActions.distanceToTarget = Vector3.Distance(antagonistActions.characterController.transform.position, antagonistActions.transform.position);
@@ -115,7 +119,7 @@ public class AntagonistAI : ActionObject
             {
                 antagonistActions.canSeeTarget = true;
                 antagonistActions.target = _characterController.transform;
-                antagonistActions.transform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.target.position.y, antagonistActions.target.position.z));
+                antagonistActions.aiTransform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.target.position.y, antagonistActions.target.position.z));
                 Debug.DrawRay(antagonistActions.rayTransform.position, antagonistActions.targetDirection * 20, Color.red);
             }
             else
@@ -151,14 +155,11 @@ public class IdleAction : Action
     }
     public override void Execute(ActionObject actionObject)
     {
-
         AudioManager.Instance.PlayRatRoam();
-
         actionObject.antagonistActions.isMoving = false;
         actionObject.antagonistActions.isIdle = true;
         actionObject.antagonistActions.isAttacking = false;
         actionObject.antagonistActions.agent.isStopped = true;
-
         while (actionObject.antagonistActions.waitCount < 0.5)
         {
             actionObject.antagonistActions.isSearching = true;
@@ -210,7 +211,6 @@ public class RoamAction : Action
             }
         return val;
     }
-
     public override void Execute(ActionObject actionObject)
     {
         actionObject.antagonistActions.isIdle = false;
@@ -233,10 +233,8 @@ public class RoamAction : Action
         {
             return;
         }
-
     }
 }
-
 internal class AttackAction : Action
 {
     public override float Evaluate(ActionObject actionObject)
@@ -260,26 +258,11 @@ internal class AttackAction : Action
 
     public override void Execute(ActionObject actionObject)
     {
-
         AudioManager.Instance.PlayRatChase();
-
         actionObject.antagonistActions.isMoving = false;
         actionObject.antagonistActions.isIdle = false;
         actionObject.antagonistActions.isAttacking = true;
         actionObject.antagonistActions.agent.isStopped = true;
-
-        GameObject currentProjectile = ((AntagonistAI)actionObject).MakeProjectile();
-        Vector3 targetPosition = actionObject.antagonistActions.targetPosition;
-        currentProjectile.transform.position = actionObject.antagonistActions.projectileSpawn.position;
-        currentProjectile.transform.right = actionObject.antagonistActions.projectileSpawn.forward;
-        currentProjectile.GetComponent<Rigidbody>().velocity = (actionObject.antagonistActions.projectileSpawn.forward - actionObject.antagonistActions.targetPosition + new Vector3(0.1f, 0, 0)) * (actionObject.antagonistActions.distanceToTarget / actionObject.antagonistActions.projectileSpeedMulitplier);
-        /*while (actionObject.antagonistActions.waitCount < 0.5)
-        {
-            actionObject.antagonistActions.isSearching = true;
-            actionObject.antagonistActions.waitCount += Time.fixedDeltaTime;
-            return;
-        }*/
-
     }
 }
 namespace AI.UtilitySystem

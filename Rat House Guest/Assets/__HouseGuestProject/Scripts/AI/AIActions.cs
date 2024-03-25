@@ -32,7 +32,7 @@ public class AIActions : MonoBehaviour
     [Header("Settings_Projectile")]
     [SerializeField] GameObject ignoreLayer;
     [SerializeField] public GameObject[] projectile;
-    public float projectileSpeedMulitplier;
+    public float projectileSpeedFactor;
     [SerializeField] public Transform projectileSpawn;
     public int fovAngle;
     public float visionRange;
