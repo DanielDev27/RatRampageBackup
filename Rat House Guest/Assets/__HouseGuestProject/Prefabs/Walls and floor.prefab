@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7600679108941951604}
   - component: {fileID: 1452641337754707005}
   - component: {fileID: 1975883969951331595}
-  - component: {fileID: 5773853048633169396}
+  - component: {fileID: 3899761949742183135}
   m_Layer: 10
   m_Name: N_wall
   m_TagString: Untagged
@@ -116,8 +116,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!64 &5773853048633169396
-MeshCollider:
+--- !u!65 &3899761949742183135
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,10 +134,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7063808102438620079, guid: f231ed81fef913c4a859441a3e643eab, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 8.051005, y: 2.2297401, z: 0.23953894}
+  m_Center: {x: -0.680778, y: 0.0008556843, z: -0.10077648}
 --- !u!1 &914976798402511473
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +493,7 @@ GameObject:
   - component: {fileID: 5716429083964541064}
   - component: {fileID: 3611443007145279126}
   - component: {fileID: 3955554528678806270}
-  - component: {fileID: 3074753067464650386}
+  - component: {fileID: 5943195300431964324}
   m_Layer: 10
   m_Name: E_wall
   m_TagString: Untagged
@@ -597,8 +596,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!64 &3074753067464650386
-MeshCollider:
+--- !u!65 &5943195300431964324
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -615,10 +614,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -263439351070671165, guid: f231ed81fef913c4a859441a3e643eab, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.23845285, y: 2.2394536, z: 7.672452}
+  m_Center: {x: -0.048274487, y: -0.24280202, z: 1.1766162}
 --- !u!1 &3993334001606616254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,8 +1198,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.16065654, y: 0.15360011, z: 0}
-  m_Center: {x: -0.008242016, y: 0.0016784, z: 1.1032047e-14}
+  m_Size: {x: 0.16065654, y: 0.15360011, z: 0.001}
+  m_Center: {x: -0.008242016, y: 0.0016784, z: -0.0005}
 --- !u!1 &7309439481172207486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,8 +1366,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.051005, y: 2.229732, z: 0.24076936}
-  m_Center: {x: -0.76128626, y: -0.2946693, z: -0.013434906}
+  m_Size: {x: 8.095667, y: 2.2414625, z: 0.26309967}
+  m_Center: {x: 0.42965412, y: -0.36504868, z: 0.027503818}
 --- !u!1 &8930198091048398669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1380,7 @@ GameObject:
   - component: {fileID: 1185868448174144918}
   - component: {fileID: 4717125864337278869}
   - component: {fileID: 577587814001275477}
-  - component: {fileID: 8495781121177862124}
+  - component: {fileID: 6577918760198644743}
   m_Layer: 10
   m_Name: W_wall
   m_TagString: Untagged
@@ -1483,8 +1481,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!64 &8495781121177862124
-MeshCollider:
+--- !u!65 &6577918760198644743
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1501,7 +1499,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7314003110150144498, guid: f231ed81fef913c4a859441a3e643eab, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.23999938, y: 2.2394586, z: 7.6865406}
+  m_Center: {x: -0.0000003054738, y: 0.00003170967, z: -0.09228039}
