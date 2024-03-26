@@ -232,7 +232,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402603145369243430}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -520,7 +520,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2358788264489179130}
-  - component: {fileID: 1046987945346683298}
   - component: {fileID: 1484481685201638345}
   - component: {fileID: 8187471800908643817}
   - component: {fileID: 1615890971475992409}
@@ -551,27 +550,6 @@ Transform:
   - {fileID: 687468995818229072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1046987945346683298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119140828178749609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tasks: {fileID: 11400000, guid: 5485feba9ae8bc64884e0562c3a6e73a, type: 2}
-  baseObject: {fileID: 402603145369243430}
-  destroyedObject: {fileID: 3053106784836339246}
-  destroyBy: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  breakingAudio: {fileID: 5630233522172555849}
-  isDestroyed: 0
 --- !u!65 &1484481685201638345
 BoxCollider:
   m_ObjectHideFlags: 0
