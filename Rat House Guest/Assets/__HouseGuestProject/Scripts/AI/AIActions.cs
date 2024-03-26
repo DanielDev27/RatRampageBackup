@@ -28,6 +28,7 @@ public class AIActions : MonoBehaviour
     public static int IsMoving = Animator.StringToHash("isMoving");
     public static int IsAttack = Animator.StringToHash("isAttack");
     public static int IsSearch = Animator.StringToHash("isSearch");
+    public static int IdleRange = Animator.StringToHash("IdleRange");
 
     [Header("Settings_Projectile")]
     [SerializeField] GameObject ignoreLayer;
@@ -52,7 +53,6 @@ public class AIActions : MonoBehaviour
     public bool isAttacking;
     public bool isSearching;
     public bool canSeeTarget;
-
 
     private void Awake()
     {
@@ -93,6 +93,10 @@ public class AIActions : MonoBehaviour
             return;
         }
 
+        if (!isSearching)
+        {
+            animator.SetFloat(IdleRange, Random.Range(0, 3));
+        }
         currentActionObject?.FixedUpdate();
     }
     void OnDrawGizmos()
@@ -126,6 +130,10 @@ public class AIActions : MonoBehaviour
         {
             Physics.IgnoreCollision(collision.collider, aICollider);
         }
+    }
+    public void SetIdle()
+    {
+        animator.SetFloat(IdleRange, Random.Range(0, 2));
     }
 }
 
