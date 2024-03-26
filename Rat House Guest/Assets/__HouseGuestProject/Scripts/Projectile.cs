@@ -2,15 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float bookDamage;
+
     private void Start()
     {
         StartCoroutine(ProjectileDespawn());
     }
-
 
     private void OnCollisionEnter(Collision other)
     {

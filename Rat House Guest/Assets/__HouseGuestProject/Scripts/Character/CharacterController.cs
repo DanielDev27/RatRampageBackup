@@ -59,6 +59,7 @@ public class CharacterController : MonoBehaviour
         Instance = this;
         playerInput = new PlayerInput();
         RegisterInputs();
+        CursorSettings(false, CursorLockMode.Confined);
     }
     private void OnEnable()
     {
@@ -200,6 +201,7 @@ public class CharacterController : MonoBehaviour
         {
             pause = !pause;
             GameUIManager.Instance.PauseMenu(pause);
+            CursorSettings(true, CursorLockMode.Confined);
         }
     }
 
@@ -244,7 +246,7 @@ public class CharacterController : MonoBehaviour
         }
 
     }
-    void CursorSettings(bool cursorVisibility, CursorLockMode cursorLockMode)
+    public void CursorSettings(bool cursorVisibility, CursorLockMode cursorLockMode)
     {
         Cursor.visible = cursorVisibility;
         Cursor.lockState = cursorLockMode;

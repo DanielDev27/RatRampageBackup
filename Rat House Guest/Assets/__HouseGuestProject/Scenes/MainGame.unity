@@ -6001,6 +6001,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1855033031009470264, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 1446761062}
+    - target: {fileID: 2173040030545560235, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 1446761062}
+    - target: {fileID: 5568430646548233215, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 1446761062}
+    - target: {fileID: 7027080442486790568, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 1446761062}
     - target: {fileID: 8318367208210688802, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6044,6 +6060,10 @@ PrefabInstance:
     - target: {fileID: 8663542822342209944, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
       propertyPath: m_Name
       value: Books
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663542822342209944, guid: ce29c5cfe60ff334399f4fa464835a9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9802,6 +9822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 929414583}
     m_Modifications:
+    - target: {fileID: 1644332986941477389, guid: 1d8d2ac5e9f4bab439d3c7a85f9c5cc4, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 1446761062}
     - target: {fileID: 5137209883253407107, guid: 1d8d2ac5e9f4bab439d3c7a85f9c5cc4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
