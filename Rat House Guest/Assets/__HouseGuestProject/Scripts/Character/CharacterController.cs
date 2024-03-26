@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 using DG.Tweening;
@@ -35,18 +34,20 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private LayerMask jumpingLayer;
 
     [Header("Animation")]
-    [SerializeField] Animator ratAnimator;
+    [SerializeField] public Animator ratAnimator;
     [SerializeField] float jumpTimeoutCurrent;
     [SerializeField] bool isMoving;
     [SerializeField] bool isRunning;
     [SerializeField] bool isJumping;
     [SerializeField] bool isGrounded;
     [SerializeField] bool isFalling;
+    [SerializeField] public bool isHurt;
     [SerializeField] public bool pause = false;
     static readonly int Speed = Animator.StringToHash("speed");
     static readonly int IsMoving = Animator.StringToHash("isMoving");
     static readonly int IsJump = Animator.StringToHash("isJump");
     static readonly int IsFall = Animator.StringToHash("isFall");
+    static readonly int IsHurt = Animator.StringToHash("isHurt");
 
     [Header("Rooms")]
     [SerializeField] bool bathroom;
@@ -69,11 +70,6 @@ public class CharacterController : MonoBehaviour
     {
         playerInput.Player.Disable();
     }
-    void Start()
-    {
-
-    }
-
     void RegisterInputs()
     {
         playerInput.Player.Move.performed += WASD => moveInput = WASD.ReadValue<Vector2>();
@@ -94,6 +90,7 @@ public class CharacterController : MonoBehaviour
         PlayerMove();
         //CursorSettings(false, CursorLockMode.Locked);
         PlayerLook();
+        ratAnimator.SetBool(IsHurt, isHurt);
     }
 
     public void PlayerMove()
@@ -210,41 +207,20 @@ public class CharacterController : MonoBehaviour
 
         if (other.gameObject.layer == 12)
         {
-            /*Debug.Log("Enter Bathroom");
-             bathroom = true;
-             bedroom = false;
-             kitchen = false;
-             livingRoom = false;*/
             TaskManager.Instance.SetBathroom();
         }
         if (other.gameObject.layer == 13)
         {
-            /*Debug.Log("Enter Bedroom");
-             bathroom = false;
-             bedroom = true;
-             kitchen = false;
-             livingRoom = false;*/
             TaskManager.Instance.SetBedroom();
         }
         if (other.gameObject.layer == 14)
         {
-            /*Debug.Log("Enter Kitchen");
-             bathroom = false;
-             bedroom = false;
-             kitchen = true;
-             livingRoom = false;*/
             TaskManager.Instance.SetKitchen();
         }
         if (other.gameObject.layer == 15)
         {
-            /*Debug.Log("Enter Living Room");
-            bathroom = false;
-            bedroom = false;
-            kitchen = false;
-            livingRoom = true;*/
             TaskManager.Instance.SetLivingRoom();
         }
-
     }
     public void CursorSettings(bool cursorVisibility, CursorLockMode cursorLockMode)
     {

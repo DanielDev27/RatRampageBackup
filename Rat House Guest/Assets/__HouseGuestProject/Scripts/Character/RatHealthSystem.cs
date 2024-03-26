@@ -34,6 +34,7 @@ public class RatHealthSystem : MonoBehaviour
         {
             damageVignette.intensity.value = 0.5f;
             StartCoroutine(VignetteReset());
+            StartCoroutine(HurtReset());
         }
         if (currentHealth <= 0)
         {
@@ -49,5 +50,11 @@ public class RatHealthSystem : MonoBehaviour
         {
             damageVignette.intensity.value = 0.0f;
         }
+    }
+    private IEnumerator HurtReset()
+    {
+        CharacterController.Instance.isHurt = true;
+        yield return new WaitForSeconds(0.5f);
+        CharacterController.Instance.isHurt = false;
     }
 }
