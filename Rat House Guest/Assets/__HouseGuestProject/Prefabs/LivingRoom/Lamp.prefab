@@ -144,10 +144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8469599663593797749}
   - component: {fileID: 8527028569898697106}
-  - component: {fileID: 4628513294232603017}
-  - component: {fileID: 860519367534891681}
   - component: {fileID: 2784892222036205028}
   - component: {fileID: 7596293566097301454}
+  - component: {fileID: 5264683428921755503}
   m_Layer: 10
   m_Name: Lamp
   m_TagString: Untagged
@@ -184,59 +183,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tasks: {fileID: 11400000, guid: 7eb5e29cd487732469b4b790925fba34, type: 2}
   baseObject: {fileID: 4404637169967088353}
   destroyedObject: {fileID: 4967199615653047135}
-  destroyBy: 0
+  destroyBy: 1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   breakingAudio: {fileID: 7596293566097301454}
   isDestroyed: 0
---- !u!136 &4628513294232603017
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351262614075307082}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Height: 2.5
-  m_Direction: 1
-  m_Center: {x: 6.92316, y: 1.17, z: -6.1888266}
---- !u!65 &860519367534891681
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351262614075307082}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.10714698, z: 1}
-  m_Center: {x: 6.92316, y: 0.068339705, z: -6.1888266}
 --- !u!65 &2784892222036205028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -256,8 +210,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.3539946, z: 1}
-  m_Center: {x: 6.92316, y: 2.3713756, z: -6.1888266}
+  m_Size: {x: 1.2, y: 0.5, z: 1.2}
+  m_Center: {x: 6.92316, y: 2.5, z: -6.1888266}
 --- !u!82 &7596293566097301454
 AudioSource:
   m_ObjectHideFlags: 0
@@ -354,6 +308,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &5264683428921755503
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351262614075307082}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &4404637169967088353
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +346,6 @@ GameObject:
   - component: {fileID: 9075311628763492620}
   - component: {fileID: 6675511507226437351}
   - component: {fileID: 8677600130250277}
-  - component: {fileID: 2920027604582070864}
   - component: {fileID: 5290723125323669476}
   - component: {fileID: 8031609145145272923}
   - component: {fileID: 9010266087688005310}
@@ -442,33 +422,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &2920027604582070864
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4404637169967088353}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!65 &5290723125323669476
 BoxCollider:
   m_ObjectHideFlags: 0

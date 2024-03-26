@@ -182,13 +182,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tasks: {fileID: 11400000, guid: d46db05d0d78ccb4cbf22db0591aa02b, type: 2}
   baseObject: {fileID: 5164769844487866721}
   destroyedObject: {fileID: 4271061794912321942}
-  destroyBy: 0
+  destroyBy: 1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   breakingAudio: {fileID: 2933669162026413199}
   isDestroyed: 0
 --- !u!135 &8736397866363589013
