@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 680554748385260249}
   - component: {fileID: 7036136923895493691}
   - component: {fileID: 8690405349159625230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6719939453146526863}
   - component: {fileID: 4037668237873291647}
   - component: {fileID: 4811858601238000774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 2602156558158247805}
   - component: {fileID: 2434392410831923725}
   - component: {fileID: 6165373238644728918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 5988651451300658545}
   - component: {fileID: 2079609017164218826}
   - component: {fileID: 1374719450513371755}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 8872717645002307438}
   - component: {fileID: 8046908645409289550}
   - component: {fileID: 1523733949297170909}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 907172141914394705}
   - component: {fileID: 9188157347974132166}
   - component: {fileID: 6781229202658676106}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 6531083622114910755}
   - component: {fileID: 4915025840165413988}
   - component: {fileID: 6698596041068636185}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 1583271233180613233}
   - component: {fileID: 4968785839114238649}
   - component: {fileID: 2321443123532334172}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 7119866911214368875}
   - component: {fileID: 3542580848305422976}
   - component: {fileID: 6979213913734150218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 922699151479062193}
   - component: {fileID: 4185352739707873661}
   - component: {fileID: 7427836926268857190}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 4016247755598696942}
   - component: {fileID: 7795978294019327541}
   - component: {fileID: 1987840936898015657}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7828458515647900209}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: B_Oven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,9 +1538,8 @@ GameObject:
   - component: {fileID: 3634202340186013675}
   - component: {fileID: 326234718016515133}
   - component: {fileID: 2945079915423675651}
-  - component: {fileID: 9070744680050406838}
   - component: {fileID: 8564935302930476705}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Oven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,33 +1613,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &9070744680050406838
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8313626624349041951}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8564935302930476705
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1675,7 +1647,8 @@ GameObject:
   - component: {fileID: 8889418626234627919}
   - component: {fileID: 3155091908527407545}
   - component: {fileID: 5642958781128165716}
-  m_Layer: 0
+  - component: {fileID: 9218558028258575181}
+  m_Layer: 10
   m_Name: Oven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1838,3 +1811,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &9218558028258575181
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994267619990834692}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1

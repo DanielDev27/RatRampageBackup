@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 361619834571110235}
   - component: {fileID: 4494858023375670978}
   - component: {fileID: 4282330405050423514}
+  - component: {fileID: 1568720254631610101}
   m_Layer: 10
   m_Name: Stove extractor
   m_TagString: Untagged
@@ -189,6 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   breakingAudio: {fileID: 4282330405050423514}
+  collisionCount: 0
+  tough: 0
   isDestroyed: 0
 --- !u!65 &4494858023375670978
 BoxCollider:
@@ -307,6 +310,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1568720254631610101
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225825338017568784}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &2879341816129450648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,7 +3890,6 @@ GameObject:
   - component: {fileID: 8412680071293694577}
   - component: {fileID: 7282227763094084995}
   - component: {fileID: 6503083692024274277}
-  - component: {fileID: 6506058119501437237}
   - component: {fileID: 6332535252188719186}
   m_Layer: 10
   m_Name: Stove extractor
@@ -3935,33 +3964,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &6506058119501437237
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5273395390914610502}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &6332535252188719186
 MonoBehaviour:
   m_ObjectHideFlags: 0

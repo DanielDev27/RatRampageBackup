@@ -190,6 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   breakingAudio: {fileID: 2933669162026413199}
+  collisionCount: 0
+  tough: 0
   isDestroyed: 0
 --- !u!135 &8736397866363589013
 SphereCollider:

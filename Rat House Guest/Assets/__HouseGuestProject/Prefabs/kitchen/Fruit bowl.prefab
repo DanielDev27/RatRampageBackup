@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7326973189545678438}
   - component: {fileID: 1931479805311786278}
   - component: {fileID: 6179421780867853018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7301136876239890324}
   - component: {fileID: 2113645682643559633}
   - component: {fileID: 2319664569122870155}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,6 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   breakingAudio: {fileID: 2113645682643559633}
+  collisionCount: 0
+  tough: 0
   isDestroyed: 0
 --- !u!136 &7301136876239890324
 CapsuleCollider:
@@ -350,7 +352,7 @@ GameObject:
   - component: {fileID: 2224292434179502381}
   - component: {fileID: 651654842302018541}
   - component: {fileID: 7987159647602866987}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +484,7 @@ GameObject:
   - component: {fileID: 4162090512062052774}
   - component: {fileID: 3111068536675747628}
   - component: {fileID: 8369715546724553370}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +570,7 @@ GameObject:
   - component: {fileID: 1672824508776622407}
   - component: {fileID: 5484211450917124276}
   - component: {fileID: 979407210019312466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986448169693382779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +741,7 @@ GameObject:
   - component: {fileID: 2219173434727837541}
   - component: {fileID: 7479888926124518422}
   - component: {fileID: 1101926465203084329}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +875,7 @@ GameObject:
   - component: {fileID: 3503625215532774481}
   - component: {fileID: 5817885510260614416}
   - component: {fileID: 6222524252941983421}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1009,7 @@ GameObject:
   - component: {fileID: 3679310435926712952}
   - component: {fileID: 1057798321184496347}
   - component: {fileID: 5942547218789734010}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fruit_Bowl_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,6 +1197,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bd0fe356aff7fd444a2c89dbef3bd2c4, type: 3}
       propertyPath: m_Name
       value: Fruit bowl - Proxy
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd0fe356aff7fd444a2c89dbef3bd2c4, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532245860470466284, guid: bd0fe356aff7fd444a2c89dbef3bd2c4, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
