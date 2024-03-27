@@ -115,7 +115,7 @@ public class CharacterController : MonoBehaviour
         if (isJumping && isGrounded && jumpTimeoutCurrent <= 0f)
         {
             jumpTimeoutCurrent = jumpTimeout;
-            charRigidbody.AddForce(Vector3.up*0.1f, ForceMode.Impulse);
+            //charRigidbody.AddForce(Vector3.up*0.1f, ForceMode.Impulse);
             charRigidbody.velocity = new Vector3(moveDirection.x * characterSpeed, jumpMultiplier * Vector3.up.y, moveDirection.z * characterSpeed);
             //transform.DOMove(transform.position + Vector3.up * jumpMultiplier + charRigidbody.velocity * jumpTimeout, jumpTimeout);
         }

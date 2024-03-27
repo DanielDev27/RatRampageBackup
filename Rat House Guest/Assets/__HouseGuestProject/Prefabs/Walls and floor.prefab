@@ -942,7 +942,9 @@ GameObject:
   - component: {fileID: 6287728802250516740}
   - component: {fileID: 4769538725067794578}
   - component: {fileID: 694437382471815527}
-  - component: {fileID: 8680989123399401528}
+  - component: {fileID: 6695636204276497403}
+  - component: {fileID: 3738097745340096402}
+  - component: {fileID: 1704698726119261592}
   m_Layer: 10
   m_Name: Bathroom_doorway_wall
   m_TagString: Untagged
@@ -1043,8 +1045,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!64 &8680989123399401528
-MeshCollider:
+--- !u!65 &6695636204276497403
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1061,10 +1063,51 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8467570322273122896, guid: f231ed81fef913c4a859441a3e643eab, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.28301248, y: 2.2309234, z: 2.1447966}
+  m_Center: {x: -0.002522692, y: -0.24163258, z: -1.3781952}
+--- !u!65 &3738097745340096402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759258484244042374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.28301248, y: 0.3030336, z: 0.99576235}
+  m_Center: {x: -0.002522692, y: 0.7223127, z: 0.17224258}
+--- !u!65 &1704698726119261592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759258484244042374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.28301248, y: 2.2309234, z: 0.6208455}
+  m_Center: {x: -0.002522692, y: -0.24163258, z: 0.9313203}
 --- !u!1 &6318390139486836514
 GameObject:
   m_ObjectHideFlags: 0
