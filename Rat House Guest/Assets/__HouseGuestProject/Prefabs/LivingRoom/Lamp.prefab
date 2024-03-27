@@ -190,6 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   breakingAudio: {fileID: 7596293566097301454}
+  collisionCount: 0
+  tough: 0
   isDestroyed: 0
 --- !u!65 &2784892222036205028
 BoxCollider:
@@ -2145,7 +2147,7 @@ Transform:
   m_GameObject: {fileID: 6420865723325430373}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0.01093}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01144}
   m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.010000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2163,7 +2165,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
