@@ -422,7 +422,7 @@ PrefabInstance:
     - target: {fileID: 3144666943820502321, guid: ebcf9011bfa2385479dd853ef2b89213, type: 3}
       propertyPath: livingTask3.Array.data[0]
       value: 
-      objectReference: {fileID: 1649852804}
+      objectReference: {fileID: 1627357665}
     - target: {fileID: 3144666943820502321, guid: ebcf9011bfa2385479dd853ef2b89213, type: 3}
       propertyPath: kitchenTask1.Array.data[0]
       value: 
@@ -19638,6 +19638,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2045294250}
+  - {fileID: 1649852802}
   - {fileID: 1120813215}
   - {fileID: 877345408}
   - {fileID: 797159046}
@@ -24522,13 +24523,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7015723145711379257, guid: 4836296446a8d934dae7d0d88c25824b, type: 3}
   m_PrefabInstance: {fileID: 1570014958}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1627357665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8527028569898697106, guid: c685dbf802c1cf547b6f7828a6f2ba17, type: 3}
+  m_PrefabInstance: {fileID: 228364773}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1649852801
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2045294250}
+    m_TransformParent: {fileID: 1352059592}
     m_Modifications:
     - target: {fileID: 1888261965417335478, guid: 0f40b48a55cd29748b0dde4973ff5350, type: 3}
       propertyPath: m_Name
@@ -24584,17 +24596,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7797917090844601890, guid: 0f40b48a55cd29748b0dde4973ff5350, type: 3}
   m_PrefabInstance: {fileID: 1649852801}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1649852804 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 691991973827174057, guid: 0f40b48a55cd29748b0dde4973ff5350, type: 3}
-  m_PrefabInstance: {fileID: 1649852801}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1700518413 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5187798693691652724, guid: 285c4abebe5c51b479ac3de5b231825d, type: 3}
@@ -36488,7 +36489,6 @@ Transform:
   - {fileID: 228364774}
   - {fileID: 1038548088}
   - {fileID: 1343470793}
-  - {fileID: 1649852802}
   m_Father: {fileID: 1352059592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2054842538

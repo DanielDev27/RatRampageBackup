@@ -277,7 +277,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7797917090844601890}
-  - component: {fileID: 691991973827174057}
   - component: {fileID: 9217584885876323163}
   - component: {fileID: 7687242720029028426}
   m_Layer: 10
@@ -304,26 +303,6 @@ Transform:
   - {fileID: 2701580284296023182}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &691991973827174057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888261965417335478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseObject: {fileID: 5949960314530177279}
-  destroyedObject: {fileID: 8699000574658475669}
-  destroyBy: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  breakingAudio: {fileID: 0}
-  isDestroyed: 0
 --- !u!136 &9217584885876323163
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -805,7 +784,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5949960314530177279}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
