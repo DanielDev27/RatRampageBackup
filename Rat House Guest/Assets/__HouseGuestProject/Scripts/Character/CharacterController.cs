@@ -60,7 +60,7 @@ public class CharacterController : MonoBehaviour
         Instance = this;
         playerInput = new PlayerInput();
         RegisterInputs();
-        CursorSettings(false, CursorLockMode.Confined);
+        CursorSettings(false, CursorLockMode.Locked);
     }
     private void OnEnable()
     {

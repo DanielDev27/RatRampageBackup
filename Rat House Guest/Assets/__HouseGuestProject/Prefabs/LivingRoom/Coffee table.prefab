@@ -399,7 +399,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2669784581216707493}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -594,7 +594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7fcc6c6088361b4eb22b4d9128adbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tasks: {fileID: 11400000, guid: 8fd9c37fc0f96964f8211e8e98cd5fca, type: 2}
   baseObject: {fileID: 2669784581216707493}
   destroyedObject: {fileID: 962532324512218340}
   destroyBy: 0
@@ -602,6 +601,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   breakingAudio: {fileID: 3258287423867022040}
+  collisionCount: 0
+  tough: 1
   isDestroyed: 0
 --- !u!82 &3258287423867022040
 AudioSource:
@@ -814,7 +815,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7771914073938552239}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -948,7 +949,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8908924165227051570}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}

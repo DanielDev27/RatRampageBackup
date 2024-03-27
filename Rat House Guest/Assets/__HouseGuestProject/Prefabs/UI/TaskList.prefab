@@ -292,7 +292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Take out the seating
+  m_text: 'Clear the Table
 
 '
   m_isRightToLeft: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.7
+  m_fontSize: 33.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -496,12 +496,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   bedTask1:
   - {fileID: 0}
   kitchenTask1:
-  - {fileID: 0}
   - {fileID: 0}
   kitchenTask2:
   - {fileID: 0}
@@ -1185,7 +1182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kill Gramp''s caffeine addiction
+  m_text: 'Is that Coffee?
 
 '
   m_isRightToLeft: 0
@@ -1214,7 +1211,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 32.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3106,9 +3103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Give Gramps all the smoke
-
-'
+  m_text: No Cooking Tonight
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f936fdb297ad674db15b9ecd1ec6fd2, type: 2}
   m_sharedMaterial: {fileID: -3047062966011136365, guid: 5f936fdb297ad674db15b9ecd1ec6fd2, type: 2}
@@ -3135,7 +3130,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.25
+  m_fontSize: 25.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

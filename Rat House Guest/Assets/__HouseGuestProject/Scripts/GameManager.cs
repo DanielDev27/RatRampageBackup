@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         pause.enabled = false;
         Debug.Log("Game Completed");
         AudioManager.Instance.PlayMainMenu();
+        CharacterController.Instance.CursorSettings(true, CursorLockMode.None);
     }
     public void GameOver()
     {
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
         pause.enabled = false;
         Debug.Log("Game Over");
         AudioManager.Instance.PlayGameOver();
+        CharacterController.Instance.CursorSettings(true, CursorLockMode.None);
     }
 
 }
