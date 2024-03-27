@@ -207,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204317277}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28978413, y: 0.00000006422787, z: -0.000000019446633, w: 0.95709205}
+  m_LocalRotation: {x: 0.2897842, y: -0.000000029510076, z: 0.000000008934934, w: 0.95709205}
   m_LocalPosition: {x: 0, y: 0.99999994, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19962,6 +19962,7 @@ MonoBehaviour:
   rayTransform: {fileID: 1061899488}
   isActive: 1
   agent: {fileID: 1411466231}
+  searchTime: 15
   waitCount: 0
   remainingDistance: 0
   roamIndex: 0
@@ -20482,7 +20483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439764468}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2897841, y: 0.00000004998031, z: -0.000000015132818, w: 0.95709205}
+  m_LocalRotation: {x: 0.28978413, y: -0.000000007566415, z: 0.0000000022909268, w: 0.95709205}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

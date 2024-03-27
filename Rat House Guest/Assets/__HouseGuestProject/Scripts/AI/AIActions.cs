@@ -16,6 +16,7 @@ public class AIActions : MonoBehaviour
     [Header("Settings_Movement")]
     [SerializeField] bool isActive = true;
     public NavMeshAgent agent;
+    public float searchTime;
     public float waitCount = 0;
     public float remainingDistance;
     public int roamIndex;

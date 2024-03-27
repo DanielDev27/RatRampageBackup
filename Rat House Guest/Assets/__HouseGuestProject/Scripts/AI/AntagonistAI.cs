@@ -60,6 +60,10 @@ public class AntagonistAI : ActionObject
         antagonistActions.remainingDistance = new Vector3(antagonistActions.agent.destination.x - antagonistActions.transform.position.x, 0, antagonistActions.agent.destination.z - antagonistActions.transform.position.z).magnitude;
         //VisionCheck();
         FieldOfViewCheck();
+        if (antagonistActions.isSearching && antagonistActions.waitCount < antagonistActions.searchTime)
+        {
+            antagonistActions.waitCount += Time.fixedDeltaTime;
+        }
     }
 
     public override void FixedUpdate() { }
@@ -145,7 +149,7 @@ public class IdleAction : Action
 {
     public override float Evaluate(ActionObject actionObject)
     {
-        if (actionObject.antagonistActions.remainingDistance < 0.1f && actionObject.antagonistActions.waitCount < 5)
+        if (actionObject.antagonistActions.remainingDistance < 0.1f && actionObject.antagonistActions.waitCount < actionObject.antagonistActions.searchTime && !actionObject.antagonistActions.isAttacking)
         {
             return 1 / actionObject.antagonistActions.remainingDistance;
         }
@@ -161,13 +165,16 @@ public class IdleAction : Action
         actionObject.antagonistActions.isIdle = true;
         actionObject.antagonistActions.isAttacking = false;
         actionObject.antagonistActions.agent.isStopped = true;
-        while (actionObject.antagonistActions.waitCount < 0.5)
+        if (actionObject.antagonistActions.waitCount < actionObject.antagonistActions.searchTime && actionObject.antagonistActions.target == null)
         {
             actionObject.antagonistActions.isSearching = true;
-            actionObject.antagonistActions.waitCount += Time.fixedDeltaTime;
-            return;
         }
-        if (actionObject.antagonistActions.remainingDistance < 0.1f && actionObject.antagonistActions.waitCount >= 0.5)
+        if (actionObject.antagonistActions.target != null)
+        {
+            actionObject.antagonistActions.isSearching = false;
+            actionObject.antagonistActions.isAttacking = true;
+        }
+        if (actionObject.antagonistActions.remainingDistance < 0.1f && actionObject.antagonistActions.waitCount >= actionObject.antagonistActions.searchTime)
         {
             actionObject.antagonistActions.roamIndex++;
             if (actionObject.antagonistActions.roamIndex >= actionObject.antagonistActions.roamPoints.Count)
