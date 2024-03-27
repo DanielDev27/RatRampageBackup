@@ -18218,9 +18218,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.1
-  m_Height: 0.4
+  m_Height: 0.38120985
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -0.052997828}
 --- !u!54 &1098572543
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19108,7 +19108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300706917}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2897841, y: 0.00000004998031, z: -0.000000015132818, w: 0.95709205}
+  m_LocalRotation: {x: 0.28978413, y: -0.000000007566415, z: 0.0000000022909268, w: 0.95709205}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24212,7 +24212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9105307778277974030, guid: f0c43348ee6b3e0479600193a6b041c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 9105307778277974030, guid: f0c43348ee6b3e0479600193a6b041c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -45731,6 +45731,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8152379016325300133, guid: 55d1b685235d6204386eea828dc7b61a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 929414582}
     - target: {fileID: 8674613602843077162, guid: 55d1b685235d6204386eea828dc7b61a, type: 3}
       propertyPath: m_Name
       value: GameOver
@@ -46107,6 +46111,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2770131671124507054, guid: 9e77078c2eccfa543b48570211dc76ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 929414582}
     - target: {fileID: 8077884226828358118, guid: 9e77078c2eccfa543b48570211dc76ed, type: 3}
       propertyPath: m_Name
       value: GameFinished

@@ -48,11 +48,12 @@ public class AntagonistAI : ActionObject
         {
             if (antagonistActions.target == null || !antagonistActions.canSeeTarget)
             {
-                antagonistActions.aiTransform.LookAt(agent.nextPosition);
+                antagonistActions.aiTransform.LookAt(new Vector3(agent.nextPosition.x, agent.nextPosition.y, agent.nextPosition.z));
             }
             if (antagonistActions.target != null && antagonistActions.canSeeTarget)
             {
                 antagonistActions.aiTransform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.transform.position.y, antagonistActions.target.position.z));
+                antagonistActions.rayTransform.LookAt(antagonistActions.target.position);
             }
         }
         antagonistActions.distanceToTarget = Vector3.Distance(antagonistActions.characterController.transform.position, antagonistActions.transform.position);
@@ -119,7 +120,7 @@ public class AntagonistAI : ActionObject
             {
                 antagonistActions.canSeeTarget = true;
                 antagonistActions.target = _characterController.transform;
-                antagonistActions.aiTransform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.target.position.y, antagonistActions.target.position.z));
+                antagonistActions.aiTransform.LookAt(new Vector3(antagonistActions.target.position.x, antagonistActions.transform.position.y, antagonistActions.target.position.z));
                 Debug.DrawRay(antagonistActions.rayTransform.position, antagonistActions.targetDirection * 20, Color.red);
             }
             else
