@@ -59,6 +59,7 @@ public class GameUIManager : MonoBehaviour
     }
     public void ReturnToMenu()
     {
+        Debug.Log("Return To Menu");
         pauseGroup.DOFade(0, 0.3f);
         loadingGroup.DOFade(1, 0.3f);
         SceneLoaderManager.Instance.LoadScene(menuScene);

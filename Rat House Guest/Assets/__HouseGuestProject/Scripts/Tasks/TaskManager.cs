@@ -16,8 +16,8 @@ public class TaskManager : MonoBehaviour
     [SerializeField] List<DestructibleObjectManager> bathTask2 = new List<DestructibleObjectManager>();
     [SerializeField] List<DestructibleObjectManager> bathTask3 = new List<DestructibleObjectManager>();
     [SerializeField] List<DestructibleObjectManager> bedTask1 = new List<DestructibleObjectManager>();
-    //[SerializeField] List<DestructibleObjectManager> bedTask2 = new List<DestructibleObjectManager>();
-    //[SerializeField] List<DestructibleObjectManager> bedTask3 = new List<DestructibleObjectManager>();
+    [SerializeField] List<DestructibleObjectManager> bedTask2 = new List<DestructibleObjectManager>();
+    [SerializeField] List<DestructibleObjectManager> bedTask3 = new List<DestructibleObjectManager>();
     [SerializeField] List<DestructibleObjectManager> kitchenTask1 = new List<DestructibleObjectManager>();
     [SerializeField] List<DestructibleObjectManager> kitchenTask2 = new List<DestructibleObjectManager>();
     [SerializeField] List<DestructibleObjectManager> kitchenTask3 = new List<DestructibleObjectManager>();
@@ -34,6 +34,8 @@ public class TaskManager : MonoBehaviour
     Task bath2;
     Task bath3;
     Task bed1;
+    Task bed2;
+    Task bed3;
     Task kitchen1;
     Task kitchen2;
     Task kitchen3;
@@ -51,6 +53,8 @@ public class TaskManager : MonoBehaviour
         bath2 = new Task(bathTask2, false);
         bath3 = new Task(bathTask3, false);
         bed1 = new Task(bedTask1, false);
+        bed2 = new Task(bedTask2, false);
+        bed3 = new Task(bedTask3, false);
         kitchen1 = new Task(kitchenTask1, false);
         kitchen2 = new Task(kitchenTask2, false);
         kitchen3 = new Task(kitchenTask3, false);
@@ -66,6 +70,8 @@ public class TaskManager : MonoBehaviour
         CheckCompletion(bath2, bathroomChecks);
         CheckCompletion(bath3, bathroomChecks);
         CheckCompletion(bed1, bedroomChecks);
+        CheckCompletion(bed2, bedroomChecks);
+        CheckCompletion(bed3, bedroomChecks);
         CheckCompletion(kitchen1, kitchenChecks);
         CheckCompletion(kitchen2, kitchenChecks);
         CheckCompletion(kitchen3, kitchenChecks);
@@ -100,6 +106,16 @@ public class TaskManager : MonoBehaviour
                 {
                     bed1.IsTaskComplete = true;
                     checks[0].SetActive(true);
+                }
+                if (_task == bed2)
+                {
+                    bed2.IsTaskComplete = true;
+                    checks[1].SetActive(true);
+                }
+                if (_task == bed3)
+                {
+                    bed3.IsTaskComplete = true;
+                    checks[2].SetActive(true);
                 }
                 if (_task == kitchen1)
                 {
@@ -141,8 +157,8 @@ public class TaskManager : MonoBehaviour
     public void CheckGameOver()
     {
         int _count = 0;
-        List<bool> tasksCompletion = new List<bool>(){bath1.IsTaskComplete, bath2.IsTaskComplete, bath3.IsTaskComplete, bed1.IsTaskComplete,
-        kitchen1.IsTaskComplete, kitchen2.IsTaskComplete, kitchen3.IsTaskComplete, livingRoom1.IsTaskComplete, livingRoom2.IsTaskComplete,
+        List<bool> tasksCompletion = new List<bool>(){bath1.IsTaskComplete, bath2.IsTaskComplete, bath3.IsTaskComplete, bed1.IsTaskComplete,bed2.IsTaskComplete,
+        bed3.IsTaskComplete, kitchen1.IsTaskComplete, kitchen2.IsTaskComplete, kitchen3.IsTaskComplete, livingRoom1.IsTaskComplete, livingRoom2.IsTaskComplete,
         kitchen3.IsTaskComplete};
 
         foreach (bool taskComplete in tasksCompletion)

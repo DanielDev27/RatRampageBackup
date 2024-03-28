@@ -11,13 +11,17 @@ public class DestructibleObjectManager : MonoBehaviour
     [SerializeField] AudioSource breakingAudio;
     [SerializeField] int collisionCount = 0;
     [SerializeField] bool tough;
+    [SerializeField] bool box;
     public bool isDestroyed = false;
     // Start is called before the first frame update
     void Start()
     {
         Instance = this;
         baseObject.SetActive(true);
-        destroyedObject.SetActive(false);
+        if (!box)
+        {
+            destroyedObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -36,7 +40,7 @@ public class DestructibleObjectManager : MonoBehaviour
                         destroyedObject.SetActive(true);
                         isDestroyed = true;
                         //tasks.SetTaskComplete();
-                        breakingAudio.Play();
+                        if (breakingAudio != null) { breakingAudio.Play(); }
                         TaskManager.Instance.UpdateTasks();
                     }
                     if (tough)
@@ -72,11 +76,14 @@ public class DestructibleObjectManager : MonoBehaviour
             {
                 if (other.gameObject.layer == 6/*Ground Layer*/)
                 {
-                    baseObject.SetActive(false);
-                    destroyedObject.SetActive(true);
+                    if (!box)
+                    {
+                        baseObject.SetActive(false);
+                        destroyedObject.SetActive(true);
+                        breakingAudio.Play();
+                    }
                     isDestroyed = true;
                     //tasks.SetTaskComplete();
-                    breakingAudio.Play();
                     TaskManager.Instance.UpdateTasks();
                 }
             }
