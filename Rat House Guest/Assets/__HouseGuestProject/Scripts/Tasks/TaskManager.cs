@@ -159,7 +159,7 @@ public class TaskManager : MonoBehaviour
         int _count = 0;
         List<bool> tasksCompletion = new List<bool>(){bath1.IsTaskComplete, bath2.IsTaskComplete, bath3.IsTaskComplete, bed1.IsTaskComplete,bed2.IsTaskComplete,
         bed3.IsTaskComplete, kitchen1.IsTaskComplete, kitchen2.IsTaskComplete, kitchen3.IsTaskComplete, livingRoom1.IsTaskComplete, livingRoom2.IsTaskComplete,
-        kitchen3.IsTaskComplete};
+        livingRoom3.IsTaskComplete};
 
         foreach (bool taskComplete in tasksCompletion)
         {
