@@ -9,11 +9,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource RatChase;
     [SerializeField] AudioSource MainMenuAmbience;
     [SerializeField] AudioSource GameOver;
-
-    private void Start()
+    private void Awake()
     {
         Instance = this;
     }
+
     public void PlayRatRoam()
     {
         if (!RatRoam.isPlaying)
